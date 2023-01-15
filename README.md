@@ -41,7 +41,7 @@ df_monthly_return = snpa.df_from_csv('snpa_df_monthly_return.csv')
 # The 'forecast' hyperparameter specifies whether the algorithm will use XGBoost to forecast asset values
 df, backtest = snpa.df_split_period(df_monthly_return, '2010-02-01', '2020-02-01', '2020-03-01', forecast=False)
 
-# Run SNPA
+# Run SNPA. Best parameters for forecast=True : lambda_p=0.6,lambda_n=-0.2
 df_portfolio, df_edges = snpa.snpa(df,lambda_p=0.8,lambda_n=-0.5,k=4000, forecast=False)
 
 # Get results (S, w)
