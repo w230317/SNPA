@@ -4,6 +4,10 @@ Stock Network Portfolio Allocation (SNPA)
 ```python
 # import requirements
 import pandas as pd  
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+pd.options.mode.chained_assignment = None
+
 import numpy as np  
 import networkx as nx 
 from datetime import datetime, timedelta  
