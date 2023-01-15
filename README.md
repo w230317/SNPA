@@ -2,9 +2,9 @@
 Stock Network Portfolio Allocation (SNPA)
 
 
-# import requirements
-import pandas as pd
-import numpy as np
+## import requirements
+import pandas as pd \n
+import numpy as np \n
 import networkx as nx
 from datetime import datetime, timedelta
 from random import randint, random
@@ -12,7 +12,7 @@ from sklearn.model_selection import RandomizedSearchCV
 from xgboost import XGBRegressor
 import os
 
-# if tested on google colab you need to install the yfinance package
+## if tested on google colab you need to install the yfinance package
 try:
   import yfinance as yf
 except:
