@@ -22,6 +22,7 @@ except:
 import pandas_datareader.data as pdr
 yf.pdr_override()
 
+# refers to the SNPA.py file
 from SNPA import * 
 
 # stock example file
