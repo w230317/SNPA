@@ -19,7 +19,8 @@
 
 class SPNA:
   
-   def __init__(self):
+ 
+  def __init__(self):
     pass
   
   def softmax(self, x):
@@ -366,8 +367,7 @@ class SPNA:
             df_daily_close = df_daily_close.fillna(0.0)
 
             df_daily_volume[s] = pd.DataFrame(v)
-            df_daily_volume = df_daily_volume.fillna(0.0)
-
+            df_daily_volume = df_daily_volume.fillna(0.0)            
 
             cols.append(s)
         except:
