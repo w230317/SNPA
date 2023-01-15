@@ -1,7 +1,7 @@
 # SNPA
 Stock Network Portfolio Allocation (SNPA)
 
-<pre>
+```python
 # import requirements
 import pandas as pd  
 import numpy as np  
@@ -51,4 +51,4 @@ print(df_portfolio)
 
 # Get backtest
 print(snpa.portfolio_backtest(backtest, df_portfolio))
-</pre>
+```
