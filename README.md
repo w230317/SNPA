@@ -32,6 +32,7 @@ stock = stock.sample(60, random_state=42)
 snpa = SPNA()
 
 # Step 1 - Generate database from Yahoo Finance. Pay attention to the date format dd-mm-yyyy
+# An array with asset names can also be used, example: snpa.gen_asset_data(['BBAS3.SA','ITUB4.SA','MGLU3.SA'], '01-01-2010', '01-01-2021')
 snpa.gen_asset_data(stock, '01-01-2010', '01-01-2021')
 
 # Step 2:
