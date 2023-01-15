@@ -73,12 +73,12 @@ class SPNA:
 
     if forecast:
       lags = 6  
-      df_daily_volume = snpa.df_from_csv('snpa_df_daily_volume.csv')
+      df_daily_volume = self.df_from_csv('snpa_df_daily_volume.csv')
       dfvol = pd.DataFrame(df_daily_volume[df_daily_volume.index < backtest_date])
       dfvol = pd.DataFrame(dfvol[dfvol.index >= start_date])
       dfvol = pd.DataFrame(dfvol[dfvol.index <= end_date])
 
-      df_daily_close = snpa.df_from_csv('snpa_df_daily_close.csv')
+      df_daily_close = self.df_from_csv('snpa_df_daily_close.csv')
       dfpric = pd.DataFrame(df_daily_close[df_daily_close.index < backtest_date])
       dfpric = pd.DataFrame(dfpric[dfpric.index >= start_date])
       dfpric = pd.DataFrame(dfpric[dfpric.index <= end_date])
