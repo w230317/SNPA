@@ -1,21 +1,17 @@
 # requirements
-# import pandas as pd
-# import numpy as np
-# import networkx as nx
-# from datetime import datetime, timedelta
-# from random import randint, random
-# from sklearn.model_selection import RandomizedSearchCV
-# from xgboost import XGBRegressor
+import pandas as pd
+import numpy as np
+import networkx as nx
+from datetime import datetime, timedelta
+from random import randint, random
+from sklearn.model_selection import RandomizedSearchCV
+from xgboost import XGBRegressor
 
-# import os
-# try:
-#   import yfinance as yf
-# except:
-#   !pip install yfinance
-#   import yfinance as yf
+import os
+import yfinance as yf
+import pandas_datareader.data as pdr
+yf.pdr_override()
 
-# import pandas_datareader.data as pdr
-# yf.pdr_override()
 
 class SPNA:
   
