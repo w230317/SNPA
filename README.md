@@ -22,6 +22,7 @@ except:
 import pandas_datareader.data as pdr
 yf.pdr_override()
 
+from SNPA import * 
 
 # stock example file
 stock =  ((pd.read_csv('https://raw.githubusercontent.com/w230317/SNPA/main/data/stockB3.csv', header=None, usecols=[0])))
